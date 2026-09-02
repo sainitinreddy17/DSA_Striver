@@ -152,3 +152,99 @@ public class InputExample {
 ```
 ---
 
+# 7. Constants
+
+★ We use the final keyword to create constants. These values cannot be changed.
+
+`final float PI = 3.14;`
+
+---
+
+# 8. Conditional Statements
+
+★ If, Else, Else-if
+
+Given the marks of a student, tell us the grade he is getting followig the below rules.
+
+- Grade A (>= 90)
+- Grade B (>= 70 & < 90)
+- Grade C (>= 50 & < 70)
+
+```Java
+Scanner sc = new Scanner(System.in);
+int marks = sc.nextInt();
+
+if(marks >= 90){
+    System.out.println("Grade A");
+}else{
+    if(marks >= 70 && marks < 90){
+        System.out.println("Grade B");
+    }else{
+        System.out.println("Fail");
+    }
+}
+```
+---
+
+# 9. Loops
+
+## For Loop
+
+```Java
+Scanner sc= new Scanner(System.in);
+int size = sc.nextInt();
+int[] arr = new int[size];
+
+for(int i=0; i<=size-1; i++){
+    arr[i] = sc.nextInt();
+}
+
+- For Each Loop
+
+for(int num: arr){
+    System.out.println(num + " ");
+}
+sc.close();
+```
+## While Loop
+
+```Java
+int i = 2; // initialisation
+while(i <= 5){ // condition check
+    System.out.println(i); 
+    i = i+2;  // increment
+}
+```
+
+## Do While Loop
+
+```Java
+int num = 0;
+do{
+    num = sc.nextInt();
+    System.out.println(num);
+} while(num != 10)
+```
+
+---
+
+# 10. Exception Handling
+
+```Java
+int num1 = 10;
+int num2 = 0;
+int num3 = num1/num2; // 10/0 is not possibe
+System.out.println(num3);
+
+try{
+    int num1 = 10;
+    int num2 = 0;
+    int num3 = num1/num2; // 10/0 is not possibe
+    System.out.println(num3);
+}catch(Exception ex){
+    System.out.println(ex);
+}finally{
+    System.out.println("Done"); // finally block always excecutes
+} 
+```
+---
