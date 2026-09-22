@@ -9,9 +9,9 @@ Given an array of integers nums, return the value of the largest element in the 
 |Explanation: The largest element in array is 6  |Explanation: The largest element in array is 99  |
 
 - Constraints :
->1 <= nums.length <= 105
->-104 <= nums[i] <= 104
->nums may contain duplicate elements.
+    * 1 <= nums.length <= 10^5
+    * -10^4 <= nums[i] <= 10^4
+    * nums may contain duplicate elements.
 
 ## Brute Approach :
 
